@@ -576,13 +576,9 @@ background: rgba(32, 32, 32, 0.377);
 } */
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
 
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
+   
 .dot h1,
          .xline{
         font-size: 0.6rem !important;
