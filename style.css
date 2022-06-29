@@ -4,6 +4,7 @@
     clear: both
 }
 
+
 .column-66 {
     float: left;
     width: 92.66666%;
@@ -268,7 +269,12 @@ text-align: left;
 .topcomponent {
         display: none;
     }
+        .xmobileh1 {
+            display: none;
+        }
 }
+
+
 
 body{
     background-color: green;;
@@ -585,11 +591,31 @@ background: rgba(32, 32, 32, 0.377);
         opacity: 1
     }
 } */
-
+.xmobileh1{
+    display: none;
+}
 /* On smaller screens, decrease text size */
-@media screen and (max-width: 486px) {
+@media (min-width: 486px) {
+    .topcomponent {
+        display: none;
+    }
 
+
+    .xmobileh1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 486px) {
+h1 br{
+    display: none ;
+}
    
+.mycol header {
+    color: white;
+
+    margin-bottom: 2px;
+}
 .dot h1,
          .xline{
         font-size: 0.4rem !important;
@@ -633,4 +659,93 @@ font-size: 1.2rem!important;
        bottom: 0;
        background: #ffffff;
    }
+
+   div .myflex {
+       margin-left: auto;
+     
+   }
+   div .changebg{
+        margin-right: auto;
+   }
+   .mynavmg {
+       text-align: left;
+       padding-right: 0;
+       font-size: 1.1rem;
+   }
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0) !important;
+    border-color: #ffffff00 !important;
+}
+
+@media screen and (max-width: 280px) {
+
+
+    .dot h1,
+    .xline {
+        font-size: 5px !important;
+        letter-spacing: 0;
+        font-weight: 100;
+    }
+
+          .column-43 h2
+          {
+             font-size: 6px !important;
+             letter-spacing: 0;
+         }
+div .mycol {
+    margin-top: 42px;
+    flex-direction: column;
+    font-size: 25px;
+    background: rgba(32, 32, 32, 0.377);
+    background: linear-gradient(357deg, rgba(32, 32, 32, 0.614) 0%, rgba(0, 0, 0, 0.247) 100%);
+    text-align: center;
+}
+.mycol header {
+    color: white;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+    .ninja {
+        color: white;
+        font-size: 10.2px !important;
+        font-weight: 600;
+    }
+
+    .Kawasaki,
+    h2 {
+        font-size: 19px !important;
+    }
+
+    .dot {
+        width: 80% !important;
+        margin: 7px;
+        padding: 2px;
+    }
+
+    .xline {
+        display: flex;
+        font-size: 6px;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+
+    .xline:active {
+        display: flex;
+        font-size: 6px;
+        font-weight: 300;
+        letter-spacing: 0;
+        color: #ffffff4f;
+    }
+
+    .xline::after {
+        margin: 2px !important;
+        content: "";
+        width: 50%;
+        height: 2px;
+        right: 25%;
+        bottom: 0;
+        background: #ffffff;
+    }
 }
